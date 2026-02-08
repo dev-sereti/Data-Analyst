@@ -22,7 +22,6 @@ const menuBtn = document.getElementById("menuBtn");
 const navLinks = document.getElementById("navLinks");
 
 menuBtn?.addEventListener("click", () => navLinks?.classList.toggle("open"));
-
 navLinks?.querySelectorAll("a").forEach((a) => {
   a.addEventListener("click", () => navLinks.classList.remove("open"));
 });
@@ -63,10 +62,6 @@ const modalTitle = document.getElementById("modalTitle");
 const modalBody = document.getElementById("modalBody");
 const closeModalBtn = document.getElementById("closeModal");
 
-/* IMPORTANT:
-   Your HTML has buttons with data-open="p1"... "p4".
-   This cases object must include p4 for the new dashboard project.
-*/
 const cases = {
   p1: {
     title: "Case Study — Weather + Production Intelligence",
@@ -116,7 +111,7 @@ const cases = {
         <li><strong>Dashboard design:</strong> Built an interactive report with slicers for <em>Region</em>, <em>Year</em>, and <em>Transaction Type</em>.</li>
         <li><strong>Data storytelling:</strong> Visualized monthly transaction trends, region-wise comparisons, transaction-type distribution, and top customers.</li>
       </ul>
-      <p><strong>Result:</strong> Produced a decision-ready dashboard highlighting <em>Total Amount (5M)</em>, <em>Total Transactions (7)</em>, and <em>Average Amount (707.14K)</em>—improving my ability to translate raw data into actionable insights and communicate findings effectively.</p>
+      <p><strong>Result:</strong> Produced a decision-ready dashboard highlighting <em>Total Amount (5M)</em>, <em>Total Transactions (7)</em>, and <em>Average Amount (707.14K)</em>, improving my ability to translate raw data into actionable insights and communicate findings effectively.</p>
     `
   }
 };
